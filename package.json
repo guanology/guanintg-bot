@@ -1,0 +1,33 @@
+{
+  "name": "guanintg-bot",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "graphql": "ts-node server/index.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.22.1",
+    "apollo-server": "^2.24.0",
+    "dotenv": "^9.0.2",
+    "graphql": "^15.5.0",
+    "graphql-scalars": "^1.9.3",
+    "nexus": "^1.0.0",
+    "proxy-agent": "^4.0.1",
+    "telegraf": "^4.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "prisma": "^2.22.1"
+  }
+}
