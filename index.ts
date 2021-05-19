@@ -1,7 +1,7 @@
 #!/usr/bin/env ts-node
-import { Telegraf } from 'telegraf'
 import { config } from 'dotenv'
-import * as ProxyAgent from 'proxy-agent'
+import ProxyAgent from 'proxy-agent'
+import { Telegraf } from 'telegraf'
 
 config({})
 
