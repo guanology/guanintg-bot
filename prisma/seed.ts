@@ -1,19 +1,8 @@
-import { Prisma, PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client'
+
+import { userData } from './data'
 
 const prisma = new PrismaClient()
-
-const userData: Prisma.TelegramUsersCreateInput[] = [
-  {
-    id: 1,
-    first_name: 'Himself65',
-    username: 'himself65'
-  },
-  {
-    id: 2,
-    first_name: '屑之魔女',
-    username: 'kokodayouxie'
-  }
-]
 
 async function main () {
   console.log('Start seeding ...')
