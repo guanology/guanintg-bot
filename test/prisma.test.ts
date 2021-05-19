@@ -14,3 +14,7 @@ describe('Database Test', () => {
       )
   })
 })
+
+afterAll(() => {
+  prisma.$disconnect()
+})
