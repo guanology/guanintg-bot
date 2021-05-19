@@ -4,24 +4,30 @@
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node index.ts",
+    "dev": "next",
+    "build": "next build",
+    "bot": "ts-node index.ts",
+    "seed": "ts-node prisma/seed.ts",
     "graphql": "ts-node server/index.ts",
     "inspect": "npx prisma introspect"
   },
   "dependencies": {
     "@prisma/client": "^2.23.0",
-    "apollo-server": "^2.24.0",
     "dotenv": "^9.0.2",
-    "graphql": "^15.5.0",
-    "graphql-scalars": "^1.9.3",
-    "nexus": "^1.0.0",
+    "next": "^10.2.0",
+    "next-auth": "^3.23.1",
+    "pg": "^8.6.0",
     "proxy-agent": "^4.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "telegraf": "^4.3.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
   },
   "devDependencies": {
     "@types/node": "^15.3.0",
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
     "eslint": "^7.12.1",
@@ -29,6 +35,9 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "prisma": "^2.23.0"
   }
 }
