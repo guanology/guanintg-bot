@@ -5,10 +5,11 @@
   "license": "MIT",
   "scripts": {
     "start": "ts-node index.ts",
-    "graphql": "ts-node server/index.ts"
+    "graphql": "ts-node server/index.ts",
+    "inspect": "npx prisma introspect"
   },
   "dependencies": {
-    "@prisma/client": "^2.22.1",
+    "@prisma/client": "^2.23.0",
     "apollo-server": "^2.24.0",
     "dotenv": "^9.0.2",
     "graphql": "^15.5.0",
@@ -28,6 +29,6 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "prisma": "^2.22.1"
+    "prisma": "^2.23.0"
   }
 }
