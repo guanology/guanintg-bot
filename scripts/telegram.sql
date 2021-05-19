@@ -1,4 +1,4 @@
-create table TelegramUsers
+create table "TelegramUsers"
 (
     id         integer      not null
         constraint telegram_users_pk
@@ -9,4 +9,4 @@ create table TelegramUsers
 );
 
 create unique index telegram_users_id_uindex
-    on TelegramUsers (id);
+    on "TelegramUsers" (id);
