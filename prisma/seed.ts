@@ -2,7 +2,7 @@ import { Prisma, PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
-const userData: Prisma.UserCreateInput[] = [
+const userData: Prisma.TelegramUsersCreateInput[] = [
   {
     id: 1,
     first_name: 'Himself65',
@@ -18,7 +18,7 @@ const userData: Prisma.UserCreateInput[] = [
 async function main () {
   console.log('Start seeding ...')
   for (const data of userData) {
-    const user = await prisma.user.create({
+    const user = await prisma.telegramUsers.create({
       data
     })
     console.log(`Created user with id: ${user.first_name}`)

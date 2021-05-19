@@ -9,7 +9,8 @@
     "bot": "ts-node index.ts",
     "seed": "ts-node prisma/seed.ts",
     "graphql": "ts-node server/index.ts",
-    "inspect": "npx prisma introspect"
+    "introspect": "npx prisma introspect",
+    "generate": "npx prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^2.23.0",
